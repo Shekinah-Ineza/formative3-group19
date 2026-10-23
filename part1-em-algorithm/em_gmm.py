@@ -151,7 +151,7 @@ def compare_methods(x, true_labels, params):
     }, index=["Mean of Children", "Mean of Parents", "Accuracy"]).round(3)
 
 
-def plot_fit(x, params, names=GROUP_NAMES, unit="inches"):
+def plot_fit(x, params, names=GROUP_NAMES, unit="inches", save_path=None):
     """Histogram of all heights with the two fitted Gaussians."""
     grid = np.linspace(x.min() - 2, x.max() + 2, 400)
     dens = weighted_densities(grid, params)
@@ -165,10 +165,10 @@ def plot_fit(x, params, names=GROUP_NAMES, unit="inches"):
     plt.ylabel("Density")
     plt.title("EM fit: mixture of two Gaussians")
     plt.legend()
-    plt.show()
+    _save_and_show(save_path)
 
 
-def plot_log_likelihood(history):
+def plot_log_likelihood(history, save_path=None):
     """Log-likelihood per iteration, to show convergence."""
     ll = [h["Log-Likelihood"] for h in history]
     plt.figure(figsize=(8, 4))
@@ -177,4 +177,11 @@ def plot_log_likelihood(history):
     plt.ylabel("Log-likelihood")
     plt.title("EM convergence")
     plt.grid(alpha=0.3)
+    _save_and_show(save_path)
+
+
+def _save_and_show(save_path):
+    """Save the current figure if a path is given, then display it."""
+    if save_path:
+        plt.savefig(save_path, dpi=150, bbox_inches="tight")
     plt.show()
