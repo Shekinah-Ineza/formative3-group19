@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-GROUP_NAMES = ("Children", "Parents")
+GROUP_NAMES = ("Component 1 (shorter)", "Component 2 (taller)")
 
 
 # ---------------------------------------------------------------- data
@@ -117,7 +117,9 @@ def fit_em(x, tol=1e-6, max_iter=2000):
 # ---------------------------------------------------------------- outputs
 def tracking_table(history, rows=3):
     """The required table: initialization + first iterations."""
-    return pd.DataFrame(history[:rows]).set_index("Iteration").round(4)
+    table = pd.DataFrame(history[:rows]).set_index("Iteration").round(4)
+    return table.rename(columns={"mu1 (Children)": "mu1 (shorter)",
+                                 "mu2 (Parents)": "mu2 (taller)"})
 
 
 def classify_height(height, params, names=GROUP_NAMES):
