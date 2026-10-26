@@ -72,12 +72,12 @@ Each keyword counts once per review.
 
 | Keyword | Prior | Likelihood | Marginal | Positive posterior |
 |---|---|---|---|---|
-| excellent | 0.5000 | 0.1145 | 0.0709 | 0.8074 |
-| wonderful | 0.5000 | 0.0902 | 0.0555 | 0.8120 |
-| amazing | 0.5000 | 0.0671 | 0.0431 | 0.7783 |
-| terrible | 0.5000 | 0.0152 | 0.0539 | 0.1414 |
-| waste | 0.5000 | 0.0070 | 0.0506 | 0.0687 |
-| boring | 0.5000 | 0.0236 | 0.0610 | 0.1936 |
+| excellent | 0.5000 | 0.1147 | 0.0710 | 0.8074 |
+| wonderful | 0.5000 | 0.0902 | 0.0556 | 0.8121 |
+| amazing | 0.5000 | 0.0671 | 0.0431 | 0.7779 |
+| terrible | 0.5000 | 0.0153 | 0.0540 | 0.1415 |
+| waste | 0.5000 | 0.0070 | 0.0507 | 0.0687 |
+| boring | 0.5000 | 0.0237 | 0.0610 | 0.1940 |
 
 **Finding:** positive keywords raised the positive probability above the 50% prior; negative keywords lowered it. Context, negation and sarcasm remain limitations.
 
@@ -111,7 +111,7 @@ Our modular implementation calculates predictions, MSE, gradients and parameter 
 The notebook includes:
 
 - A detailed iteration table matching the manual calculations.
-- A SciPy derivative example and numerical checks of the slope gradients.
+- A SciPy derivative example and numerical checks of all four gradients: m₁, m₂, b₁ and b₂.
 - Final predictions of **[2.954063, 6.378335]**.
 - Final MSE of **2.164498**.
 
