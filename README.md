@@ -141,6 +141,8 @@ All members contributed to every part. The contributions PDF and Git history doc
 
 ## Submission Materials
 
-- Jupyter notebooks and supporting files - 
-- Handwritten Part 3 calculations PDF - 
-- Individual contributions PDF - 
+- Jupyter notebooks and supporting files - https://colab.research.google.com/github/Shekinah-Ineza/formative3-group19/blob/main/part1-em-algorithm/part1_em.ipynb#scrollTo=AEPUaGbq3f1q
+https://colab.research.google.com/drive/1EIwNuClCO_Ixq2-4-fRVRkuIgDwuQzl6#scrollTo=2PzeCsPL5r7i
+https://colab.research.google.com/drive/1jpa-qYqIEBiPG2DeDWfIiHACJGk0LYiL#scrollTo=lsHmMEA2PFkC
+- Handwritten Part 3 calculations PDF - [Part 3: Manual calculations](<Part 3 - Manual Calculations.pdf>)
+- Individual contributions PDF - - [Team contributions and meeting log](<BSE Group Assignments _ Task Sheet_[Module Name_Formative3_Cohort 2_Team19] - 1.pdf>)
