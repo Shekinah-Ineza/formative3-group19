@@ -3,3 +3,4 @@ __pycache__/
 .ipynb_checkpoints/
 part2-bayesian/*csv
 part2-bayesian/*csv
+IMDB Dataset.csv
